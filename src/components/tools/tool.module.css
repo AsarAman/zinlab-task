@@ -1,0 +1,45 @@
+.tool {
+  list-style-type: none;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  padding: 1.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.tool:hover{
+  box-shadow: var(--box-shadow);
+}
+.toolIcon {
+  color: orangered;
+}
+.toolTitle {
+  margin: 15px 0px;
+}
+.slider {
+  position: absolute;
+  left: -24px;
+  top: 40%;
+  color: var(--slider-color);
+}
+.sliderForward{
+  position: absolute;
+  color: var(--slider-color);
+  top: 40%;
+  right: -24px;
+}
+.bookmark {
+  position: absolute;
+  right: 3%;
+  top: 5%;
+  color: var(--color-black);
+  transition: 0.3s all ease;
+  display: none;
+}
+
+.tool:hover .bookmark {
+  display: block;
+  
+}
